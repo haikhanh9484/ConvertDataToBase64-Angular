@@ -28,25 +28,4 @@ export class DataService {
   Base64ToImg(data: Data) {
     return this.http.post(this.baseUrl + "img/decode", data);
   }
-
-  Test(data: Data) {
-    return this.http.post<Data>(this.baseUrl + "test", data);
-  }
-
-  // TextToBase64(data: Data): Observable<ApiResponse> {
-  //   return this.http.post<ApiResponse>(this.baseUrl + "encode", data);
-  // }
-
-  // Base64ToText(data: Data): Observable<ApiResponse> {
-  //   return this.http.post<ApiResponse>(this.baseUrl + "decode", data);
-  // }
-
-  // ImgToBase64(selectedFile: FormData): Observable<ApiResponse> {
-  //   return this.http.post<ApiResponse>(this.baseUrl + "img/encode", selectedFile);
-  // }
-
-  // Base64ToImg(data: Data): Observable<ApiResponse> {
-  //   return this.http.post<ApiResponse>(this.baseUrl + "img/decode", data);
-  // }
-
 }
